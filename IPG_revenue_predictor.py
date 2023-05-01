@@ -1,4 +1,4 @@
-# Author: Roland Pineda
+# Author: Team4: Roland Pineda, Noemie Castro, Fabian Lim
 # April 2023
 
 import streamlit as st
@@ -111,4 +111,4 @@ result =""
 # assessment button
 if st.button("Predict"):
 	revenue = mlr_intercept + mlr_income + mlr_net + mlr_age + mlr_children + mlr_region
-	st.success('**Predicted Revenue: $ {}'.format(revenue))
+	st.success('**Predicted Revenue: $ {:,}'.format(revenue))
