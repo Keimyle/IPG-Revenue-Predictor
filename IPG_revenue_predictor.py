@@ -19,33 +19,33 @@ st.title('Howden IPG Revenue Predictor')
 # Let's add a sub-title
 st.write("A revenue predictor app")
 
-mlr_intercept = 341215
+mlr_intercept = 346366
 
 option = st.selectbox(
     'Select Annual Income Range:',
     ('0-500K', '500K-1.5M', '1.5M-5M', '5M and above'))
 st.write('You selected:', option)
 if option == '0-500K':
-    mlr_income = -149556
+    mlr_income = -139160
 elif option == '500K-1.5M':
-    mlr_income = -102413
+    mlr_income = -94730
 elif option == '1.5M-5M':
-    mlr_income = 7988
+    mlr_income = 3530
 elif option == '5M and above':
-    mlr_income = 243982
+    mlr_income = 230361
 
 option = st.selectbox(
     'Select Net Worth Range:',
     ('0-5M', '5M-25M', '25M-100M', '100M and above'))
 st.write('You selected:', option)
 if option == '0-5M':
-    mlr_net = -97647
+    mlr_net = -101202
 elif option == '5M-25M':
-    mlr_net = -98968
+    mlr_net = -101491
 elif option == '25M-100M':
-    mlr_net = 2917
+    mlr_net = -6780
 elif option == '100M and above':
-    mlr_net = 193698
+    mlr_net = 209473
 
 option = st.selectbox(
     'Select Age Band:',
@@ -53,15 +53,15 @@ option = st.selectbox(
 st.write('You selected:', option)
 
 if option == '0-18':
-    mlr_age = -19213
+    mlr_age = -19591
 elif option == '19-30':
-    mlr_age = -58525
+    mlr_age = -58465
 elif option == '31-50':
-    mlr_age = -9790
+    mlr_age = -17438
 elif option == '51-65':
-    mlr_age = 19901
+    mlr_age = 21017
 elif option == '65 and above':
-    mlr_age = 67627
+    mlr_age = 74478
 
 option = st.selectbox(
     'Select Number of Children:',
@@ -71,23 +71,23 @@ st.write('You selected:', option)
 if option == '0':
     mlr_children = 0
 elif option == '1':
-    mlr_children = 11373
+    mlr_children = 12479
 elif option == '2':
-    mlr_children = 22746
+    mlr_children = 24958
 elif option == '3':
-    mlr_children = 34119
+    mlr_children = 37437
 elif option == '4':
-    mlr_children = 45492
+    mlr_children = 49916
 elif option == '5':
-    mlr_children = 56865
+    mlr_children = 62395
 elif option == '6':
-    mlr_children = 68238
+    mlr_children = 74874
 elif option == '7':
-    mlr_children = 79611
+    mlr_children = 87353
 elif option == '8':
-    mlr_children = 90984
+    mlr_children = 99832
 elif option == '9':
-    mlr_children = 102357
+    mlr_children = 112311
 elif option == '>9':
     mlr_children = 0
 
@@ -97,15 +97,15 @@ option = st.selectbox(
 st.write('You selected:', option)
 
 if option == 'Asia':
-    mlr_region = 10304
+    mlr_region = 817
 elif option == 'Europe':
-    mlr_region = 38459
+    mlr_region = 42998
 elif option == 'Middle East & Africa':
-    mlr_region = 57865
+    mlr_region = 54480
 if option == 'North America':
-    mlr_region = -130861
+    mlr_region = -129295
 elif option == 'Pacific':
-    mlr_region = 24232
+    mlr_region = 31000
 
 result =""
 # assessment button
